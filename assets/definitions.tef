@@ -1,0 +1,19 @@
+\definitions{
+    
+    Colors can be defined here and referred to by their color id.
+    You can also just use the HTML color code.
+    \color{black}{#000000}
+    \color{white}{#FFFFFF}
+    
+    Defines transitions.
+    \trans{fadefast}{QUAD EASE_IN_OUT 1s}
+    \trans{fadeslow}{QUAD EASE_IN_OUT 2.5s}
+    
+    Image source: https://pixabay.com/fi/users/splitshire-364019/
+    \img{forest}{forest.jpg}
+    
+    Call to Adventure by Kevin MacLeod (incompetech.com)
+    Licensed under Creative Commons: By Attribution 3.0 License
+    http://creativecommons.org/licenses/by/3.0/
+    \song{calltoadventure}{call_to_adventure.ogg}
+}

@@ -1,0 +1,49 @@
+\script{main}{
+    The game starts in the main script of the scriptfile by default.
+    
+    This is used to set the name of the game; it refers to an ui string in assets/lang/en/ui_strings.tef.
+    It shows up if you hover over a save in the save/load screen.
+    You can have a different name for different routes of the game or side stories.
+    \meta{
+        \game_name{my_wolf_example_title}
+    }
+    
+    \nvl Starts in NVL mode.
+    
+    Sets the background to black instantly.
+    black refers to a color id defined in the definitions file (assets/definitions.tef)
+    \bg{black}{0s}
+    
+    Refers to a text block (01) in the file assets/lang/en/text/mwe.tef.
+    Look there to see what the text is.
+    \block{mwe}{01}
+    
+    Slowly fades the screen to white, using a transition id.
+    \bg{white}{fadeslow}
+    
+    Pauses for 1 second.
+    \pause{1s}
+    
+    \adv Switches to ADV mode.
+    
+    Fades in an image background defined in definitions.
+    \bg{forest}{fadefast}
+    
+    Fades in a song.
+    \playsong{calltoadventure}{fadefast}
+    
+    More text.
+    \block{mwe}{02}
+    
+    [the story will continue]
+    
+    The end. This starts NVL mode with options, centering the text horizontally and vertically.
+    
+    \nvl{
+        \hcenter
+        \vcenter
+    }
+    
+    \bg{black}{0.25s}
+    \block{mwe}{end}
+}

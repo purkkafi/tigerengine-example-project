@@ -1,0 +1,88 @@
+\ui_strings{
+    
+    The name of the game; shows up in the game window.
+    \game_title{TigerEngine Example Project}
+    
+    The name of a specific example script. You can also just use game_title if you like.
+    \my_wolf_example_title{My Wolf Example}
+    
+    
+    In-game buttons.
+    \game_save{Save}
+    \game_load{Load}
+    \game_log{Log}
+    \game_skip{Skip}
+    \game_settings{Settings}
+    \game_quit{Quit}
+    \game_back{Back}
+    \game_quit_game{Quit game?}
+    
+    
+    Text for the settings screen.
+    \settings_title{Settings}
+    
+    \settings_subheader_video{Video settings}
+    \settings_window_mode{Window mode}
+    \settings_window_mode_tooltip{Game window display mode.}
+    \settings_window_fullscreen{Fullscreen}
+    \settings_window_windowed{Windowed}
+    
+    \settings_subheader_audio{Audio settings}
+    \settings_music_volume{Music volume}
+    \settings_music_volume_tooltip{Volume of continuously playing music and ambience.}
+    \settings_sfx_volume{SFX volume}
+    \settings_sfx_volume_tooltip{Volume of sound effects.}
+    
+    \settings_subheader_text{Text settings}
+    \settings_text_speed{Text speed}
+    \settings_text_speed_tooltip{Speed at which in-game text appears.}
+    \settings_dynamic_text_speed{Dynamic text speed}
+    \settings_dynamic_text_speed_tooltip{Toggle whether punctuation affects text speed.}
+    \settings_language{Language}
+    \settings_language_tooltip{Language of game text and user interface.}
+    
+    \settings_subheader_accessibility{Accessibility}
+    \settings_gui_scale{GUI scale}
+    \settings_gui_scale_tooltip{Size of user interface elements and text.}
+    \settings_gui_scale_normal{Normal}
+    \settings_gui_scale_large{Large}
+    
+    \settings_discard{Discard changes}
+    \settings_save_exit{Save & Exit}
+    
+    
+    Text for the save/load screen.
+    \saving_save{Save}
+    \saving_load{Load}
+    \saving_enter_name{Enter name}
+    \saving_back{Back}
+    \saving_empty{Empty}
+    \saving_rename_tooltip{Click to rename}
+    \saving_rename{Rename save}
+    \saving_rename_bank{Rename tab}
+    \saving_progress_lost{Current progress will be lost}
+    \saving_overwrite{Overwrite save slot?}
+    \saving_to_title{Return to title}
+    \saving_quit_game{Quit game}
+    \saving_bad_hash{
+        Hash mismatch.
+        The save may not function properly.
+    }
+    
+    
+    Text for the log.
+    \log_title{Log}
+    \log_exit{Close}
+    
+    
+    Text for error message popups and some other stuff.
+    \general_warning{Warning}
+    \general_ok{OK}
+    \general_cancel{Cancel}
+    \general_error{Error}
+    
+    The warning you get when trying to load a (possibly) bad save.
+    \error_bad_save{
+        The save is old or corrupted and cannot be opened.
+    }
+}
