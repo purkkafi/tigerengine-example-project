@@ -35,15 +35,90 @@
     More text.
     \block{mwe}{02}
     
-    [the story will continue]
+    Amigos appears.
+    \enter{amigos \at{1 of 1} \with{fadeslow}}
     
-    The end. This starts NVL mode with options, centering the text horizontally and vertically.
+    And speaks.
+    \block{mwe}{03}
+    Expressions of sprites can be changed this way.
+    \show{amigos \as{happy}}
+    \block{mwe}{04}
+    \show{amigos \as{neutral}}
+    \block{mwe}{05}
+    
+    This starts NVL mode with options, centering the text horizontally and vertically.
     
     \nvl{
         \hcenter
         \vcenter
     }
     
-    \bg{black}{0.25s}
+    Fade foreground briefly to black to display the chapter title.
+    \fg{black}{0.25s}
+    \block{mwe}{06}
+    \fg{clear}{0.25s}
+    
+    \adv
+    
+    \block{mwe}{07}
+    
+    Sprites can be moved this way.
+    \move{amigos \to{3 of 3} \with{movenormal}}
+    
+    Places a manual break between the transitions instead of doing them simultaneously.
+    \break
+    
+    Switch foreground to first slide of presentation.
+    \fg{pres0}{fadeslow}
+    
+    \break
+    
+    \show{amigos \as{sad}}
+    \block{mwe}{08}
+    \show{amigos \as{neutral}}
+    
+    \fg{pres1}{0s}
+    \block{mwe}{09}
+    
+    \fg{pres2}{0s}
+    \block{mwe}{10}
+    
+    \fg{pres3}{0s}
+    \block{mwe}{11}
+    
+    \fg{pres4}{0s}
+    \block{mwe}{12}
+    \show{amigos \as{sad}}
+    \block{mwe}{13}
+    \show{amigos \as{neutral}}
+    
+    \fg{pres5}{0s}
+    \block{mwe}{14}
+    \move{amigos \to{1 of 3} \with{movenormal}}
+    \block{mwe}{15}
+    \show{amigos \as{sad}}
+    \block{mwe}{16}
+    \show{amigos \as{neutral}}
+    \move{amigos \to{3 of 3} \with{movenormal}}
+    
+    \fg{pres6}{0s}
+    \block{mwe}{17}
+    \fg{pres7}{0s}
+    
+    \block{mwe}{18}
+    \show{amigos \as{sad}}
+    \block{mwe}{19}
+    \show{amigos \as{neutral}}
+    \fg{clear}{0s}
+    \block{mwe}{20}
+    
+    The end.
+    
+    \nvl{
+        \hcenter
+        \vcenter
+    }
+    
+    \fg{black}{0.25s}
     \block{mwe}{end}
 }

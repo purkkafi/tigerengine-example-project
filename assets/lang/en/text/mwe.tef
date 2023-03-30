@@ -20,6 +20,93 @@
     I need to find a My Wolf...
 }
 
+\block{03}{
+    \ami{Who goes there?}
+    
+    \ami{I am Amigos, the friendly visual novel engine tutorial wolf.}
+}
+
+\block{04}{
+    \ami{Parody is a recognized form of creative expression in many legislatures!}
+}
+
+\block{05}{
+    \ami{Anyway, let's begin our first lesson.}
+}
+
+\block{06}{
+    LESSON 1
+    DISPLAYING THINGS
+}
+
+\block{07}{
+    \ami{First, it is essential to understand how the game screen is laid out.}
+    \ami{This presentation I prepared just for you should help!}
+}
+
+\block{08}{
+    \ami{(i hope you like it... i worked so hard on it... oh god.......)}
+}
+
+\block{09}{
+    \ami{Uhhhh anyway I'm just going to go through all the things that you can display on the screen}
+}
+
+\block{10}{
+    \ami{First up is the \i{VNStage} (\i{VN} stands for \i{Visual Novel}), which is displayed behind everything else!}
+    \ami{All \i{diegetic} (\i{i dont know what that means im so sorry}) game elements are displayed there.}
+}
+
+\block{11}{
+    \ami{There's a background, first of all, such as the charming \i{forest.jpg} where we currently are.}
+    \ami{Backgrounds can be colors or images, but you can also use Godot packed scenes to create animations and other cool things!}
+    \ami{The command \i{\\bg} displays a background with a transition used to switch over from the previous background. Like everything else, backgrounds are defined in the file \i{definitions.tef} in the \i{assets} folder.}
+}
+
+\block{12}{
+    \ami{Next up: sprites!}
+    \ami{Sprites are displayed with the \i{\\enter} instruction, and you can manipulate them with \i{\\move} and \i{\\show}.}
+    \ami{And, finally, \i{\\exit} removes them from the screen.}
+}
+
+\block{13}{
+    \ami{(i hope you don't want me to leave......)}
+}
+
+\block{14}{
+    \ami{Uhhh and then there's the foreground. You can probably guess what it is.}
+    \ami{It's pretty much the same as the background; you just change it with the \i{\\fg} command.}
+    \ami{By the way, my cool presentation is displayed on the foreground, so I am drawn behind it! Watch this!}
+}
+
+\block{15}{
+    \ami{Now you can't see me!}
+}
+
+\block{16}{
+    \ami{(oh no.... i hope you want to look at me even though im not as hot or smart or interesting as all the other VN husbandos...)}
+}
+
+\block{17}{
+    \ami{Oh by the way: there, displayed on top of the VNStage, is a \i{View}.}
+    \ami{It is responsible for managing and displaying text, but it can do other things, too.}
+    \ami{There are different kinds! We are currently in ADV View, but I imagine you saw a NVL View in action when you were isekai'd here earlier.}
+}
+
+\block{18}{
+    \ami{Then, finally, we have \i{VNControls}, those cool buttons down there.}
+    \ami{If you press the \i{Save} button, for instance, you can come back to me whenever you want!}
+}
+
+\block{19}{
+    \ami{(oh god i hope you want to see me again)}
+    \ami{(wait is my name covering the damn presentation??? oh god oh fuck)}
+}
+
+\block{20}{
+    \ami{I mean... well... uh... is there something else you might want to learn?}
+}
+
 \block{end}{
     THIS VERY EXCITING AND VERY REAL VISUAL NOVEL
     

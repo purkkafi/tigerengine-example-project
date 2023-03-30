@@ -8,12 +8,32 @@
     Defines transitions.
     \trans{fadefast}{QUAD EASE_IN_OUT 1s}
     \trans{fadeslow}{QUAD EASE_IN_OUT 2.5s}
+    \trans{movenormal}{QUAD EASE_IN_OUT 1s}
     
+    Sprites. Every sprite is a folder with its image assets and a sprite.tef file.
+    \sprite{amigos}{amigos/}
+    
+    Back/foregrounds.
     Image source: https://pixabay.com/fi/users/splitshire-364019/
     \img{forest}{forest.jpg}
+    
+    Images for Amigos' presentation.
+    \img{pres0}{pres-0.png}
+    \img{pres1}{pres-1.png}
+    \img{pres2}{pres-2.png}
+    \img{pres3}{pres-3.png}
+    \img{pres4}{pres-4.png}
+    \img{pres5}{pres-5.png}
+    \img{pres6}{pres-6.png}
+    \img{pres7}{pres-7.png}
     
     Call to Adventure by Kevin MacLeod (incompetech.com)
     Licensed under Creative Commons: By Attribution 3.0 License
     http://creativecommons.org/licenses/by/3.0/
     \song{calltoadventure}{call_to_adventure.ogg}
+    
+    Defines speakers.
+    Each has a name and a color (used as a background color for the box).
+    TODO: allow more granular control of how speakers are displayed
+    \speaker{\id{ami} \name{Amigos} \color{#FF0000}}
 }

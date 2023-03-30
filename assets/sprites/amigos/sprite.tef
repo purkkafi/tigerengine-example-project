@@ -1,0 +1,7 @@
+\simple_sprite{
+    A simple sprite object with frames corresponding to a specific image in the folder.
+    
+    \frame{neutral}{neutral.png}
+    \frame{happy}{happy.png}
+    \frame{sad}{sad.png}
+}
