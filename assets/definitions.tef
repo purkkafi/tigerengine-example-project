@@ -36,4 +36,9 @@
     Each has a name and a color (used as a background color for the box).
     TODO: allow more granular control of how speakers are displayed
     \speaker{\id{ami} \name{Amigos} \color{#FF0000}}
+    
+    
+    Defines variables used by the game.
+    Each has a name (in uppercase by convention) and a default value.
+    \var{PLAYER_NAME}{{ "[default value]" }}
 }

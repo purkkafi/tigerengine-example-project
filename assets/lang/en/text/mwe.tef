@@ -107,6 +107,28 @@
     \ami{I mean... well... uh... is there something else you might want to learn?}
 }
 
+\block{21}{
+    LESSON 2
+    VARIABLES & CONTROL FLOW
+}
+
+\block{22}{
+    \ami{Hmmm... if we're going to spend more time together, we should name you properly.}
+    \ami{There is a variable for it defined – PLAYER_NAME – but its value is just "\PLAYER_NAME".}
+    \ami{That's not good! Unless that happens to be your actual name, I mean, haha. (Probably not.)}
+}
+
+\block{soon}{
+    \ami{Anyway, go on and enter your name.}
+    \ami{Please don't type anything silly or my tutorial will be ruined!!!}
+    
+    \ami{Nice to meet you, \PLAYER_NAME!}
+    \ami{I bet you're wondering how I did that.}
+    \ami{Well, variables can be embedded into game text with tags. For example, if you write \\PLAYER_NAME, the result is \PLAYER_NAME.}
+    \ami{It is also possible to use control tags (a string between double braces) to perform simple calculations and so on.}
+    \ami{For instance, the control tag \{\{PLAYER_NAME.length()\}\} results in the length of your name, which is {{PLAYER_NAME.length()}}.}
+}
+
 \block{end}{
     THIS VERY EXCITING AND VERY REAL VISUAL NOVEL
     

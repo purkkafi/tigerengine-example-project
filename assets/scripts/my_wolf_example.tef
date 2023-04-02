@@ -112,6 +112,21 @@
     \fg{clear}{0s}
     \block{mwe}{20}
     
+    Chapter 2 title.
+    
+    \nvl{
+        \hcenter
+        \vcenter
+    }
+    
+    \fg{black}{0.25s}
+    \block{mwe}{21}
+    \fg{clear}{0.25s}
+    
+    \adv
+    
+    \block{mwe}{22}
+    
     The end.
     
     \nvl{
