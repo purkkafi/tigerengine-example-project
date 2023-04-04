@@ -114,19 +114,49 @@
 
 \block{22}{
     \ami{Hmmm... if we're going to spend more time together, we should name you properly.}
-    \ami{There is a variable for it defined – PLAYER_NAME – but its value is just "\PLAYER_NAME".}
+    \ami{There is a variable for it defined – PLAYER_NAME – but it has its default value, "\PLAYER_NAME".}
     \ami{That's not good! Unless that happens to be your actual name, I mean, haha. (Probably not.)}
-}
-
-\block{soon}{
     \ami{Anyway, go on and enter your name.}
     \ami{Please don't type anything silly or my tutorial will be ruined!!!}
-    
+}
+
+\block{name_entry_prompt}{
+    Enter your name:
+}
+
+\block{23}{
     \ami{Nice to meet you, \PLAYER_NAME!}
+}
+
+\block{24}{
     \ami{I bet you're wondering how I did that.}
     \ami{Well, variables can be embedded into game text with tags. For example, if you write \\PLAYER_NAME, the result is \PLAYER_NAME.}
     \ami{It is also possible to use control tags (a string between double braces) to perform simple calculations and so on.}
-    \ami{For instance, the control tag \{\{PLAYER_NAME.length()\}\} results in the length of your name, which is {{PLAYER_NAME.length()}}.}
+    \ami{For instance, the control tag \{\{ PLAYER_NAME.length() \}\} results in the length of your name, which is {{PLAYER_NAME.length()}}.}
+    \pla{Very useful to know! I will definitely use that in my visual novels!}
+    \ami{Oh cool, you can talk.}
+    \ami{Since that's a thing, how about making some choices?}
+}
+
+\block{choice1_yes}{Yes}
+\block{choice1_no}{No}
+\block{choice1_pants}{Take off your pants}
+
+\block{25_yes}{
+    \ami{Well, that's a relief!}
+}
+
+\block{25_no}{
+    \ami{(nonoo hgffjhf i diddnt kk nwo inm s oo sosorryr rrrr  yy)}
+}
+
+\block{25_pants}{
+    \ami{Noooo! This is a tutorial for FAMILIES and BABIES who want to make VISUAL NOVELS!!!!}
+}
+
+\block{26}{
+    \ami{That choice, by the way, was implemented with the \\if instruction.}
+    \ami{It will evaluate the control tag given to it as a condition and, if true, run its contents.}
 }
 
 \block{end}{

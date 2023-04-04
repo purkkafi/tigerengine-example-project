@@ -127,6 +127,54 @@
     
     \block{mwe}{22}
     
+    Spawn input view.
+    
+    \input{
+        \block{mwe}{name_entry_prompt} The block containing the prompt text.
+        \default{Name} The default value.
+    }
+    
+    Store the result in the variable.
+    result() is a special function that returns the result of the current View.
+    For input, this means the text the user submitted (or the default value, if none).
+    
+    {{ PLAYER_NAME := result() }}
+    
+    \show{amigos \as{happy}}
+    \block{mwe}{23}
+    \show{amigos \as{neutral}}
+    \block{mwe}{24}
+    
+    Choice view.
+    Each option is a reference to a block (containing the text of the button)
+    with a value that will be returned by result() after the player makes the choice.
+    
+    \choice{
+       \block{mwe}{choice1_yes}{{ "yes" }}
+       \block{mwe}{choice1_no}{{ "no" }}
+       \block{mwe}{choice1_pants}{{ "pants" }}
+    }
+    
+    Series of if instructions that will do something in response to one of the options.
+    
+    \if{{ result() == "yes" }}{
+        \show{amigos \as{happy}}
+        \block{mwe}{25_yes}
+    }
+    
+    \if{{ result() == "no" }}{
+        \show{amigos \as{sad}}
+        \block{mwe}{25_no}
+    }
+    
+    \if{{ result() == "pants" }}{
+        \show{amigos \as{sad}}
+        \block{mwe}{25_pants}
+    }
+    
+    \show{amigos \as{neutral}}
+    \block{mwe}{26}
+    
     The end.
     
     \nvl{

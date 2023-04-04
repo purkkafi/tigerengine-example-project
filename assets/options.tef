@@ -1,1 +1,3 @@
-\options{}
+\options{
+    \shadow_color{#00000066}
+}

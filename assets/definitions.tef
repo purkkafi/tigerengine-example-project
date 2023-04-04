@@ -36,6 +36,7 @@
     Each has a name and a color (used as a background color for the box).
     TODO: allow more granular control of how speakers are displayed
     \speaker{\id{ami} \name{Amigos} \color{#FF0000}}
+    \speaker{\id{pla} \name{\PLAYER_NAME} \color{#556600}}
     
     
     Defines variables used by the game.
