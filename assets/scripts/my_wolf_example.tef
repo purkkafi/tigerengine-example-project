@@ -125,6 +125,7 @@
     
     \adv
     
+    \move{amigos \to{1 of 1} \with{movenormal}}
     \block{mwe}{22}
     
     Spawn input view.
@@ -150,9 +151,9 @@
     with a value that will be returned by result() after the player makes the choice.
     
     \choice{
-       \block{mwe}{choice1_yes}{{ "yes" }}
-       \block{mwe}{choice1_no}{{ "no" }}
-       \block{mwe}{choice1_pants}{{ "pants" }}
+       \block{mwe}{choice_yes}{{ "yes" }}
+       \block{mwe}{choice_no}{{ "no" }}
+       \block{mwe}{choice_pants}{{ "pants" }}
     }
     
     Series of if instructions that will do something in response to one of the options.
@@ -174,6 +175,44 @@
     
     \show{amigos \as{neutral}}
     \block{mwe}{26}
+    
+    Another choice...
+    
+    \choice{
+       \block{mwe}{choice_yes}{{ "yes" }}
+       \block{mwe}{choice_yeah}{{ "yeah" }}
+       \block{mwe}{choice_maybe}{{ "maybe" }}
+       \block{mwe}{choice_no}{{ "no" }}
+       \block{mwe}{choice_pants}{{ "pants" }}
+    }
+    
+    
+    ... this time handled with a match instruction.
+    
+    It matches the given control expression against some options.
+    \match{{ result() }}{
+        
+        Will be executed if result() == "pants"
+        \case{{ "pants" }}{
+            \block{mwe}{27_pants_1}
+            \show{amigos \as{sad}}
+            \block{mwe}{27_pants_2}
+        }
+        
+        Multiple cases may be matched to the same branch.
+        \case{{ "maybe" }}{{ "no" }}{
+            \block{mwe}{27_negative}
+        }
+        
+        The default branch (in this case, invoked if the user chose "yes" or "yeah")
+        \default{
+            \show{amigos \as{happy}}
+            \block{mwe}{27_positive}
+        }
+    }
+    
+    \show{amigos \as{neutral}}
+    \block{mwe}{28}
     
     The end.
     

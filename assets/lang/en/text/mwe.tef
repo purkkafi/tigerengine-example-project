@@ -138,9 +138,9 @@
     \ami{Since that's a thing, how about making some choices?}
 }
 
-\block{choice1_yes}{Yes}
-\block{choice1_no}{No}
-\block{choice1_pants}{Take off your pants}
+\block{choice_yes}{Yes}
+\block{choice_no}{No}
+\block{choice_pants}{Take off your pants}
 
 \block{25_yes}{
     \ami{Well, that's a relief!}
@@ -157,6 +157,33 @@
 \block{26}{
     \ami{That choice, by the way, was implemented with the \\if instruction.}
     \ami{It will evaluate the control tag given to it as a condition and, if true, run its contents.}
+    \ami{Anyway, you can also use the \\match instruction.}
+    \ami{If you look at the code for this example game, you can see how it's a bit cleaner, right?}
+}
+
+\block{choice_yeah}{Yeah}
+\block{choice_maybe}{Maybe}
+
+\block{27_pants_1}{
+    \ami{(why was that even an option)}
+}
+
+\block{27_pants_2}{
+    \ami{Regardless, I can't do that because I'm just a SimpleSprite... there's NOTHING underneath!}
+    \ami{(god I wish I had layers)}
+}
+
+\block{27_negative}{
+    \ami{Well, I think it makes the intent of the script easier to understand.}
+    \ami{We may write code for computers to interpret, but people read it, too!}
+}
+
+\block{27_positive}{
+    \ami{Yes!}
+}
+
+\block{28}{
+    \ami{Uh, anyway, hope you learned something about variables and control flow!}
 }
 
 \block{end}{
