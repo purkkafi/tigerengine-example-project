@@ -11,7 +11,7 @@
     \trans{movenormal}{QUAD EASE_IN_OUT 1s}
     
     Sprites. Every sprite is a folder with its image assets and a sprite.tef file.
-    \sprite{amigos}{amigos/}
+    \sprite{amigos}{amigos}
     
     Back/foregrounds.
     Image source: https://pixabay.com/fi/users/splitshire-364019/
