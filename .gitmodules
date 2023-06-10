@@ -1,3 +1,6 @@
 [submodule "tiger-engine"]
 	path = tiger-engine
 	url = https://github.com/purkkafi/tiger-engine
+[submodule "assets/themes/familiarity-theme"]
+	path = assets/themes/familiarity-theme
+	url = https://github.com/purkkafi/familiarity-theme

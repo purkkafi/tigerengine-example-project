@@ -1,3 +1,5 @@
 \options{
-    \shadow_color{#00000066}
+    
+    Tells the engine to use the theme in assets/themes/familiarity-theme.
+    \default_theme{familiarity-theme}
 }
