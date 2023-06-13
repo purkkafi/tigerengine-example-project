@@ -24,21 +24,20 @@ buses/default_bus_layout="res://tiger-engine/te_bus_layout.tres"
 TE="*res://tiger-engine/singletons/TE.gd"
 Assets="*res://tiger-engine/singletons/Assets.gd"
 Blocks="*res://tiger-engine/singletons/Blocks.gd"
-MobileUI="*res://tiger-engine/singletons/MobileUI.gd"
 Popups="*res://tiger-engine/singletons/Popups.gd"
 Audio="*res://tiger-engine/singletons/Audio.tscn"
+TETheme="*res://tiger-engine/singletons/TETheme.gd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
+window/per_pixel_transparency/allowed=true
 
 [gui]
 
 fonts/dynamic_fonts/use_oversampling=false
-theme/default_theme_scale=3.0
-theme/custom="res://assets/TestTheme.tres"
 
 [input]
 

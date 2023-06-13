@@ -33,9 +33,9 @@
     \song{calltoadventure}{call_to_adventure.ogg}
     
     Defines speakers.
-    Each has a name and a background color for the StyleBox.
-    \speaker{\id{ami} \name{Amigos} \bg_color{#FF0000}}
-    \speaker{\id{pla} \name{\PLAYER_NAME} \bg_color{#556600}}
+    Each has a name and a name color.
+    \speaker{\id{ami} \name{Amigos} \name_color{#FF0000}}
+    \speaker{\id{pla} \name{\PLAYER_NAME} \name_color{#556600}}
     
     
     Defines variables used by the game.

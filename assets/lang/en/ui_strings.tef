@@ -46,6 +46,8 @@
     \settings_gui_scale_tooltip{Size of user interface elements and text.}
     \settings_gui_scale_normal{Normal}
     \settings_gui_scale_large{Large}
+    \settings_dyslexic_font{Dyslexic font}
+    \settings_dyslexic_font_tooltip{Use OpenDyslexic (https://opendyslexic.org/).}
     
     \settings_discard{Discard changes}
     \settings_save_exit{Save & Exit}
