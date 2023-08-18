@@ -1,13 +1,5 @@
-\ui_strings{
+\localize{
     
-    The name of the game; shows up in the game window.
-    \game_title{TigerEngine Example Project}
-    
-    The name of a specific example script. You can also just use game_title if you like.
-    \my_wolf_example_title{My Wolf Example}
-    
-    
-    In-game buttons.
     \game_save{Save}
     \game_load{Load}
     \game_log{Log}
@@ -18,7 +10,6 @@
     \game_quit_game{Quit game?}
     
     
-    Text for the settings screen.
     \settings_title{Settings}
     
     \settings_subheader_video{Video settings}
@@ -41,6 +32,12 @@
     \settings_language{Language}
     \settings_language_tooltip{Language of game text and user interface.}
     
+    \settings_subheader_keys{Keyboard shortcuts}
+    \key_game_screenshot{Take a screenshot}
+    \key_game_hide{Hide interface}
+    \key_game_skip{Skip text}
+    \key_debug_toggle{Toggle debug}
+    
     \settings_subheader_accessibility{Accessibility}
     \settings_gui_scale{GUI scale}
     \settings_gui_scale_tooltip{Size of user interface elements and text.}
@@ -53,7 +50,6 @@
     \settings_save_exit{Save & Exit}
     
     
-    Text for the save/load screen.
     \saving_save{Save}
     \saving_load{Load}
     \saving_enter_name{Enter name}
@@ -70,21 +66,35 @@
         Hash mismatch.
         The save may not function properly.
     }
+    \saving_continuable{The game can now be continued!}
+    \saving_uncontinuable{The game cannot be continued in this version.}
+    \saving_future_continue_point{Future continue point}
     
     
-    Text for the log.
+    \continue_point_label{
+        [b]Continue point reached![/b]
+        
+        This version of the game ends here.
+        If you save the game now, you will be able to continue from where you left off in a future version.
+    }
+    \continue_point_button{Return to title screen}
+    
+    
     \log_title{Log}
     \log_exit{Close}
     
     
-    Text for error message popups and some other stuff.
     \general_warning{Warning}
     \general_ok{OK}
     \general_cancel{Cancel}
     \general_error{Error}
+    \general_ignore{Ignore}
+    \general_report{Report bug}
     
-    The warning you get when trying to load a (possibly) bad save.
-    \error_bad_save{
-        The save is old or corrupted and cannot be opened.
-    }
+    
+    \error_bad_save{Malformed save state}
+    \error_script{Malformed script}
+    \error_file{Malformed game file}
+    \error_engine{Internal error}
+    
 }
