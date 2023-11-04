@@ -7,13 +7,13 @@
         \vcenter
     }
     
-    \fg{black}{0.25s}
+    \fg{black}{\with{0.25s}}
     \block{mwe:21}
-    \fg{clear}{0.25s}
+    \fg{\clear}{\with{0.25s}}
     
     \adv
     
-    \move{amigos \to{1 of 1} \with{movenormal}}
+    \move{amigos}{\to{1 of 1} \with{movenormal}}
     \block{mwe:22}
     
     Spawn input view.
@@ -29,9 +29,9 @@
     
     {{ PLAYER_NAME := result() }}
     
-    \show{amigos \as{happy}}
+    \show{amigos}{\as{happy}}
     \block{mwe:23}
-    \show{amigos \as{neutral}}
+    \show{amigos}{\as{neutral}}
     \block{mwe:24}
     
     Choice view.
@@ -47,21 +47,21 @@
     Series of if instructions that will do something in response to one of the options.
     
     \if{{ result() == "yes" }}{
-        \show{amigos \as{happy}}
+        \show{amigos}{\as{happy}}
         \block{mwe:25_yes}
     }
     
     \if{{ result() == "no" }}{
-        \show{amigos \as{sad}}
+        \show{amigos}{\as{sad}}
         \block{mwe:25_no}
     }
     
     \if{{ result() == "pants" }}{
-        \show{amigos \as{sad}}
+        \show{amigos}{\as{sad}}
         \block{mwe:25_pants}
     }
     
-    \show{amigos \as{neutral}}
+    \show{amigos}{\as{neutral}}
     \block{mwe:26}
     
     Another choice...
@@ -83,7 +83,7 @@
         Will be executed if result() == "pants"
         \case{{ "pants" }}{
             \block{mwe:27_pants_1}
-            \show{amigos \as{sad}}
+            \show{amigos}{\as{sad}}
             \block{mwe:27_pants_2}
         }
         
@@ -94,12 +94,12 @@
         
         The default branch (in this case, invoked if the user chose "yes" or "yeah")
         \default{
-            \show{amigos \as{happy}}
+            \show{amigos}{\as{happy}}
             \block{mwe:27_positive}
         }
     }
     
-    \show{amigos \as{neutral}}
+    \show{amigos}{\as{neutral}}
     \block{mwe:28}
     
     The end.
@@ -109,7 +109,7 @@
         \vcenter
     }
     
-    \fg{black}{0.25s}
+    \fg{black}{\with{0.25s}}
     \block{mwe:end}
 
 }

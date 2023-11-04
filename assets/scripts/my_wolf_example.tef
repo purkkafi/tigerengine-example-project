@@ -12,14 +12,14 @@
     
     Sets the background to black instantly.
     black refers to a color id defined in the definitions file (assets/definitions.tef)
-    \bg{black}{0s}
+    \bg{black}
     
     Refers to a text block (01) in the file assets/lang/en/text/mwe.tef.
     Look there to see what the text is.
     \block{mwe:01}
     
     Slowly fades the screen to white, using a transition id.
-    \bg{white}{fadeslow}
+    \bg{white}{\with{fadeslow}}
     
     Pauses for 1 second.
     \pause{1s}
@@ -27,23 +27,23 @@
     \adv Switches to ADV mode.
     
     Fades in an image background defined in definitions.
-    \bg{forest}{fadefast}
+    \bg{forest}{\with{fadefast}}
     
     Fades in a song.
-    \playsong{calltoadventure}{fadefast}
+    \music{calltoadventure}{\with{fadefast}}
     
     More text.
     \block{mwe:02}
     
     Amigos appears.
-    \enter{amigos \at{1 of 1} \with{fadeslow}}
+    \enter{amigos}{\at{1 of 1} \with{fadeslow}}
     
     And speaks.
     \block{mwe:03}
     Expressions of sprites can be changed this way.
-    \show{amigos \as{happy}}
+    \show{amigos}{\as{happy}}
     \block{mwe:04}
-    \show{amigos \as{neutral}}
+    \show{amigos}{\as{neutral}}
     \block{mwe:05}
     
     This starts NVL mode with options, centering the text horizontally and vertically.
@@ -54,62 +54,62 @@
     }
     
     Fade foreground briefly to black to display the chapter title.
-    \fg{black}{0.25s}
+    \fg{black}{\with{0.25s}}
     \block{mwe:06}
-    \fg{clear}{0.25s}
+    \fg{\clear}{\with{0.25s}}
     
     \adv
     
     \block{mwe:07}
     
     Sprites can be moved this way.
-    \move{amigos \to{3 of 3} \with{movenormal}}
+    \move{amigos}{\to{3 of 3} \with{movenormal}}
     
     Places a manual break between the transitions instead of doing them simultaneously.
     \break
     
     Switch foreground to first slide of presentation.
-    \fg{pres0}{fadeslow}
+    \fg{pres0}{\with{fadeslow}}
     
     \break
     
-    \show{amigos \as{sad}}
+    \show{amigos}{\as{sad}}
     \block{mwe:08}
-    \show{amigos \as{neutral}}
+    \show{amigos}{\as{neutral}}
     
-    \fg{pres1}{0s}
+    \fg{pres1}
     \block{mwe:09}
     
-    \fg{pres2}{0s}
+    \fg{pres2}
     \block{mwe:10}
     
-    \fg{pres3}{0s}
+    \fg{pres3}
     \block{mwe:11}
     
-    \fg{pres4}{0s}
+    \fg{pres4}
     \block{mwe:12}
-    \show{amigos \as{sad}}
+    \show{amigos}{\as{sad}}
     \block{mwe:13}
-    \show{amigos \as{neutral}}
+    \show{amigos}{\as{neutral}}
     
-    \fg{pres5}{0s}
+    \fg{pres5}
     \block{mwe:14}
-    \move{amigos \to{1 of 3} \with{movenormal}}
+    \move{amigos}{\to{1 of 3} \with{movenormal}}
     \block{mwe:15}
-    \show{amigos \as{sad}}
+    \show{amigos}{\as{sad}}
     \block{mwe:16}
-    \show{amigos \as{neutral}}
-    \move{amigos \to{3 of 3} \with{movenormal}}
+    \show{amigos}{\as{neutral}}
+    \move{amigos}{\to{3 of 3} \with{movenormal}}
     
-    \fg{pres6}{0s}
+    \fg{pres6}
     \block{mwe:17}
-    \fg{pres7}{0s}
+    \fg{pres7}
     
     \block{mwe:18}
-    \show{amigos \as{sad}}
+    \show{amigos}{\as{sad}}
     \block{mwe:19}
-    \show{amigos \as{neutral}}
-    \fg{clear}{0s}
+    \show{amigos}{\as{neutral}}
+    \fg{\clear}
     \block{mwe:20}
     
     Jump to the next file.
