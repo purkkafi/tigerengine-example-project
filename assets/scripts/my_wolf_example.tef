@@ -36,7 +36,7 @@
     \block{mwe:02}
     
     Amigos appears.
-    \enter{amigos}{\at{1 of 1} \with{fadeslow}}
+    \enter{amigos}{\x{1 of 1} \with{fadeslow}}
     
     And speaks.
     \block{mwe:03}
@@ -63,7 +63,7 @@
     \block{mwe:07}
     
     Sprites can be moved this way.
-    \move{amigos}{\to{3 of 3} \with{movenormal}}
+    \move{amigos}{\x{3 of 3} \with{movenormal}}
     
     Places a manual break between the transitions instead of doing them simultaneously.
     \break
@@ -94,12 +94,12 @@
     
     \fg{pres5}
     \block{mwe:14}
-    \move{amigos}{\to{1 of 3} \with{movenormal}}
+    \move{amigos}{\x{1 of 3} \with{movenormal}}
     \block{mwe:15}
     \show{amigos}{\as{sad}}
     \block{mwe:16}
     \show{amigos}{\as{neutral}}
-    \move{amigos}{\to{3 of 3} \with{movenormal}}
+    \move{amigos}{\x{3 of 3} \with{movenormal}}
     
     \fg{pres6}
     \block{mwe:17}

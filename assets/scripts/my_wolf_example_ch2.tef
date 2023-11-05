@@ -13,7 +13,7 @@
     
     \adv
     
-    \move{amigos}{\to{1 of 1} \with{movenormal}}
+    \move{amigos}{\x{1 of 1} \with{movenormal}}
     \block{mwe:22}
     
     Spawn input view.
