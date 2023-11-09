@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cr5dpyw2e3gsu"
+path="res://.godot/imported/happy.png-ffc6316aa73b9c373a9ca45303e44988.image"
+
+[deps]
+
+source_file="res://assets/sprites/composite_amigos/positive/tails/happy.png"
+dest_files=["res://.godot/imported/happy.png-ffc6316aa73b9c373a9ca45303e44988.image"]
+
+[params]
+

@@ -1,0 +1,75 @@
+\composite_sprite{
+    
+    Work like in simple_sprite.
+    \y_offset{0.05}
+    \scale{1.0}
+    
+    
+    Attributes.
+    These are the fundamental units of state that determine how a composite sprite is drawn.
+    
+    Attribute 'pants' can have values 'brown', 'white', and 'off'.
+    The first value is treated as the default value.
+    \attribute{pants}{ \brown \white \off }
+    
+    Attribute 'pose' can have value 'sad', or (with a nested structure) 'positive:happy'
+    and 'positive:neutral'.
+    'positive' by itself is not a possible value, but it can be used to match sub-values.
+    \attribute{pose}{
+        \positive{ \neutral \happy }
+        \sad
+    }
+    
+    
+    Layers.
+    These are drawn on top of each other in declaration order.
+    
+    \layer{tail}{
+        If 'pose' is 'positive:neutral', the case matches and the image
+        '<sprite folder>/positive/tails/neutral.png' will be drawn on the layer.
+        \case{pose=positive:neutral}{positive/tails/neutral.png}
+        
+        \case{pose=positive:happy}{positive/tails/happy.png}
+        \case{pose=sad}{sad/tails/default.png}
+    }
+    
+    \layer{body}{
+        \case{pose=positive}{positive/body.png}
+        \case{pose=sad}{sad/body.png}
+    }
+    
+    \layer{head}{
+        \case{pose=positive:neutral}{positive/heads/neutral.png}
+        \case{pose=positive:happy}{positive/heads/happy.png}
+        \case{pose=sad}{sad/heads/default.png}
+    }
+    
+    \layer{pants}{
+        If this case matches, nothing will be drawn on this layer.
+        This needs to be specified explicitly because failing to match
+        anything in a given layer produces an error.
+        \case{pants=off}{\empty}
+        
+        Cases may be nested to test multiple attributes.
+        \case{pose=sad}{
+            \case{pants=brown}{sad/pants/brown.png}
+            \case{pants=white}{sad/pants/white.png}
+        }
+        \case{pose=positive}{
+            \case{pants=brown}{positive/pants/brown.png}
+            \case{pants=white}{positive/pants/white.png}
+        }
+    }
+    
+    
+    Shorthands.
+    These can be given to 'as' directly, instead of having to
+    type the whole predicate.
+    
+    'neutral' sets 'pose' to 'positive:neutral'
+    \shorthand{neutral}{pose=positive:neutral}
+    \shorthand{happy}{pose=positive:happy}
+    \shorthand{sad}{pose=sad}
+    A shorthand may contain multiple predicates.
+    \shorthand{sad_and_naked}{pose=sad}{pants=off}
+}

@@ -102,14 +102,5 @@
     \show{amigos}{\as{neutral}}
     \block{mwe:28}
     
-    The end.
-    
-    \nvl{
-        \hcenter
-        \vcenter
-    }
-    
-    \fg{black}{\with{0.25s}}
-    \block{mwe:end}
-
+    \jmp{my_wolf_example_ch3:ch3_start}
 }

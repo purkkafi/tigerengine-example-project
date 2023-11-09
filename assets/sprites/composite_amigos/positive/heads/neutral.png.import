@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://8s0pssbysjau"
+path="res://.godot/imported/neutral.png-1c4ef8a41838016378ccab2170684fd7.image"
+
+[deps]
+
+source_file="res://assets/sprites/composite_amigos/positive/heads/neutral.png"
+dest_files=["res://.godot/imported/neutral.png-1c4ef8a41838016378ccab2170684fd7.image"]
+
+[params]
+

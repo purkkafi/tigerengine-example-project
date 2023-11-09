@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://befucc4x307ft"
+path="res://.godot/imported/white.png-8dddd11b67d23d4d26619ff73d2befa0.image"
+
+[deps]
+
+source_file="res://assets/sprites/composite_amigos/positive/pants/white.png"
+dest_files=["res://.godot/imported/white.png-8dddd11b67d23d4d26619ff73d2befa0.image"]
+
+[params]
+

@@ -1,0 +1,106 @@
+\script{ch3_start}{
+    \nvl{
+        \hcenter
+        \vcenter
+    }
+    
+    \fg{black}{\with{0.25s}}
+    \block{mwe:29}
+    \fg{\clear}{\with{0.25s}}
+    
+    \adv
+    
+    \block{mwe:30}
+    
+    Move sprite on y axis and adjust zoom.
+    \move{amigos}{ \y{-1.0} \zoom{3.0} \with{moveveryslow} }
+    \break
+    \show{amigos}{ \as{sad} }
+    
+    \block{mwe:31}
+    
+    Return to default values.
+    \move{amigos}{ \y{0.0} \zoom{1.0} \with{moveveryfast} }
+    
+    \show{amigos}{ \as{neutral} }
+    \block{mwe:32}
+    
+    \move{amigos}{ \x{1 of 2} \with{movefast} }
+    
+    Sprite 'composite_amigos' enters the stage with id 'amigos2'.
+    \enter{composite_amigos}{ \by{amigos2} \x{2 of 2} \with{fadefast} }
+    
+    \block{mwe:33}
+    
+    Attribute 'pants' of composite sprite is set to 'white'.
+    \pause{1s}
+    \show{amigos2}{ \as{pants=white} }
+    \pause{1s}
+    
+    \block{mwe:34}
+    
+    \block{mwe:pants_choice}
+    \choice{
+        \block{mwe:pants_choice_brown}{{ "brown" }}
+        \block{mwe:pants_choice_white}{{ "white" }}
+        \block{mwe:pants_choice_off}{{ "off" }}
+    }
+    
+    \match{{ result() }}{
+        \case{{ "brown" }}{
+            \pause{1s}
+            \show{amigos2}{ \as{pants=brown} }
+            \pause{1s}
+            \block{mwe:35}
+        }
+        \case{{ "white" }}{
+            \block{mwe:36}
+        }
+        \case{{ "off" }}{
+            \show{amigos}{ \as{sad} }
+            State to switch to is specified here with the shorthand 'happy'.
+            \show{amigos2}{ \as{happy} }
+            \pause{1s}
+            Composite sprites support multiple values in as.
+            \show{amigos2}{ \as{neutral}{pants=off} }
+            \pause{1s}
+            \block{mwe:37}
+            \show{amigos}{ \as{neutral} }
+        }
+    }
+    
+    \block{mwe:38}
+    
+    Change draw order of amigos to draw him on top.
+    \move{amigos}{ \order{1} }
+    \show{amigos}{ \as{happy} }
+    
+    \block{mwe:39}
+    
+    \show{amigos}{ \as{neutral} }
+    
+    \block{mwe:40}
+    
+    \show{amigos}{ \as{sad} }
+    
+    \block{mwe:41}
+    
+    \show{amigos}{ \as{neutral} }
+    \show{amigos2}{ \as{happy} }
+    
+    \block{mwe:42}
+    
+    \show{amigos2}{ \as{neutral} }
+    
+    \block{mwe:43}
+
+    The end.
+    
+    \nvl{
+        \hcenter
+        \vcenter
+    }
+    
+    \fg{black}{\with{0.25s}}
+    \block{mwe:end}
+}

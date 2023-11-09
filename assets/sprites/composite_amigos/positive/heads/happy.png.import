@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://dvtopf4vpnan0"
+path="res://.godot/imported/happy.png-c52827d4ce056bef7db81e7e533c8ee6.image"
+
+[deps]
+
+source_file="res://assets/sprites/composite_amigos/positive/heads/happy.png"
+dest_files=["res://.godot/imported/happy.png-c52827d4ce056bef7db81e7e533c8ee6.image"]
+
+[params]
+

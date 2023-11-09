@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://cu0it3bnsuo40"
+path="res://.godot/imported/body.png-dbefd6dd97c2752b67201ccf566e0df2.image"
+
+[deps]
+
+source_file="res://assets/sprites/composite_amigos/sad/body.png"
+dest_files=["res://.godot/imported/body.png-dbefd6dd97c2752b67201ccf566e0df2.image"]
+
+[params]
+

@@ -1,6 +1,13 @@
 \simple_sprite{
     A simple sprite object with frames corresponding to a specific image in the folder.
     
+    The sprite is displaced downwards by 5 % of the screen height.
+    This is useful for animations that want to movet the sprite upwards.
+    \y_offset{0.05}
+    A constant factor the sprite is scaled by.
+    \scale{1.0}
+    
+    Associates each frame id with the image shown.
     \frame{neutral}{neutral.png}
     \frame{happy}{happy.png}
     \frame{sad}{sad.png}

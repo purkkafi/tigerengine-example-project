@@ -186,6 +186,116 @@
     \ami{Uh, anyway, hope you learned something about variables and control flow!}
 }
 
+\block{29}{
+    LESSON 3
+    ADVANCED SPRITE FEATURES
+}
+
+\block{30}{
+    \ami{Hmmm, what to tutorialize next...}
+    \ami{Well, did you know that sprites can do a lot of cool stuff? Like zooming?}
+    \ami{Watch this:}
+}
+
+\block{31}{
+    \ami{(oh god did it zoom on my humongous tits fgljdhdjsgldf)}
+}
+
+\block{32}{
+    \ami{Uh. Anyway. Maybe that's not so exciting.}
+    \ami{You really need more than one sprite to demonstrate some of the more sophisticated features, like draw order...}
+    \ami{I wonder if my brother Amigos 2 is around?}
+}
+
+\block{33}{
+    \ami2{Hey guys.}
+    \ami{Oh!! Amigos 2! How lovely!}
+    \ami{There's just one problem...}
+    \ami2{What is it, bro?}
+    \ami{I don't think poor \PLAYER_NAME will be able to tell us apart, since we're semi-identical!}
+    \ami2{Dude, it's fine. I always have my spare pants with me.}
+}
+
+\block{34}{
+    \ami2{(god i wish shirts were real)}
+    \ami{O-oh, right! That fixes it!}
+    \ami{Incidentally, \PLAYER_NAME, Amigos 2 is a \i{composite sprite}. His body is made of layers instead of being just a single image!}
+    \ami{What you just saw was his attribute "pants" being switched to "white".}
+    \ami{Check out his sprite file in assets/sprites/composite_amigos/sprite.tef to see how it all works.}
+    \ami2{Bro, you're boring this isekai guy with your exposition.}
+    \ami2{What this lesson needs is some healthy demonstration. How about a choice?}
+}
+
+\block{pants_choice}{Select the value of Amigos 2's "pants" attribute.}
+\block{pants_choice_brown}{"brown"}
+\block{pants_choice_white}{"white"}
+\block{pants_choice_off}{"off"}
+
+\block{35}{
+    \ami2{Hell yeah. The classic Amigos look.}
+    \ami2{I'm no less entitled to it despite being Amigos 2 instead of the OG.}
+    \ami2{Being his bro. Or whatever that even means.}
+    \ami2{Well, actually, since both ma and pa were simple sprites, I'm probably like a bastard or something. Interbreeding of simple and composite sprites being what it is and all.}
+    \ami2{If guys find out, means I'll be stripped of my royal status and banished from Amigosland.}
+    \ami2{So like, let's keep it a secret, right?}
+    \ami{I definitely didn't even hear that ahahahahahgakjfsghfj}
+}
+
+\block{36}{
+    \ami2{So you're into this look?}
+    \ami{It's pretty good.}
+    \ami2{Goes hard as hell.}
+    \ami{It's fine! I'd just be worried that I'd get myself all muddy, romping around the game files and whatnot.}
+    \ami{This appears to be some kind of medieval setting, and I'm not quite sure how advanced our washing tech is, haha!}
+}
+
+\block{37}{
+    \ami{skjghfgkjf what happened to this tutorial being family-friendly fguhfgfjhsdafjk}
+    \ami2{Bro, relax. You know there's nothing underneath.}
+    \ami2{Shit's smoother than smooth, never had a dick layer. Where piss comes from keeps me awake at night.}
+    \ami{I mean, I guess in that case, haha...}
+}
+
+\block{38}{
+    \ami{Well, hope you're enjoying your choice.}
+    \ami{Now would be a good time to demonstrate draw order!}
+    \ami{You see, since Amigos 2 entered the stage after me, he is drawn on top of me.}
+    \ami2{Guess you can see that since our ludicrously bodacious sprites overlap.}
+    \ami{Yes! Well, luckily, draw order can be set manually. You can do so with the \\order parameter of the \\move command. Watch this:}
+}
+
+\block{39}{
+    \ami{I just set my draw order to 1 (the default being 0) so now I'm drawn later! Isn't that exciting?}
+    \ami2{It's, like, okay.}
+}
+
+\block{40}{
+    \ami{Well, I think it would be terribly inconvenient to be stuck with whatever order the sprites happened to enter the stage. That is no basis for z-indexing!}
+    \ami2{I mean, whatever.}
+    \ami2{I'm just saying, but this tutorial kinda blows.}
+}
+
+\block{41}{
+    \ami{What!}
+    \ami2{Is there gonna be, like, adventure? Intrigue? Even romance?}
+    \ami{I mean visual novel engines don't typically provide such things by def–}
+    \ami2{Bro, I'm just kidding! Hahaha!}
+}
+
+\block{42}{
+    \ami{O-oh, okay...}
+    \ami2{I mean, sorry! But that was so funny!}
+}
+
+\block{43}{
+    \ami2{Learning about composite sprites and draw orders and such is, like, the tightest shit ever. Obviously. Never been more thrilled in my entire life.}
+    \ami{Haha, I concur.}
+    \ami2{Me too.}
+    \ami{Yes.}
+    \ami2{Yeah.}
+    \ami{Haha, anyway, I wonder what's next?}
+}
+
 \block{end}{
     THIS VERY EXCITING AND VERY REAL VISUAL NOVEL
     

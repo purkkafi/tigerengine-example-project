@@ -8,10 +8,16 @@
     Defines transitions.
     \trans{fadefast}{QUAD EASE_IN_OUT 1s}
     \trans{fadeslow}{QUAD EASE_IN_OUT 2.5s}
+    
+    \trans{moveveryfast}{QUAD EASE_IN_OUT 0.2s}
+    \trans{movefast}{QUAD EASE_IN_OUT 0.5s}
     \trans{movenormal}{QUAD EASE_IN_OUT 1s}
+    \trans{moveslow}{QUAD EASE_IN_OUT 2.5s}
+    \trans{moveveryslow}{QUAD EASE_IN_OUT 5s}
     
     Sprites. Every sprite is a folder with its image assets and a sprite.tef file.
     \sprite{amigos}{amigos}
+    \sprite{composite_amigos}{composite_amigos}
     
     Back/foregrounds.
     Image source: https://pixabay.com/fi/users/splitshire-364019/
@@ -35,6 +41,7 @@
     Defines speakers.
     Each has a name and a name color.
     \speaker{\id{ami} \name{Amigos} \name_color{#FF0000}}
+    \speaker{\id{ami2} \name{Amigos 2} \name_color{#AA3300}}
     \speaker{\id{pla} \name{\PLAYER_NAME} \name_color{#556600}}
     
     
